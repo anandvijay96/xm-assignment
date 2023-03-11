@@ -1,0 +1,1050 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body a:hover {
+  color: #d51820;
+}
+
+.horizontal__line {
+  border: 1px solid;
+  width: 25%;
+}
+
+.xm-btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+header {
+  background-color: #000;
+  padding: 1.25em;
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark__section {
+  background-color: #201d27;
+}
+
+/* ---------------------- Hero Section Start ------------------------- */
+.hero__section {
+  text-align: center;
+  background-image: url(images/mobile_bg_icons/hero1.png),
+    url(images/mobile_bg_icons/hero2.png) !important;
+  background-size: 40%, 30%;
+  background-repeat: no-repeat;
+  background-position: top left, top right -12.5%;
+}
+.hero-section__overlay {
+  padding: 5rem 0.5rem;
+  background-blend-mode: multiply;
+  background-image: linear-gradient(
+    180deg,
+    rgba(32, 46, 71, 0.65) 36.53%,
+    rgba(32, 46, 71, 0.6175) 57.69%,
+    rgba(32, 46, 71, 0.585) 78.84%,
+    rgba(32, 46, 71, 0) 100%
+  ) !important;
+  padding-bottom: 0.5rem;
+}
+.hero__subheading {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #dddddd;
+}
+.hero__heading {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: #ffffff;
+  padding: 1.25rem;
+}
+.hero__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 1.25rem;
+}
+.hero__cta {
+  display: block;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #29a643;
+  cursor: pointer;
+  padding: 0.5rem 5rem;
+  max-width: 290px;
+  margin: 0 auto;
+}
+
+.hero__cta:hover {
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+.terms__desc,
+.demo__desc {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.demo__desc a {
+  color: #ffffff;
+}
+.terms__desc a {
+  color: #d51820;
+  text-decoration: none;
+}
+
+/* ---------------------- Cards Section Start ------------------------- */
+
+#crypto__cards {
+  background-image: url(images/zero-mobile-bigger-tinted.png) !important;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top -3% right -45%;
+  padding: 2.5rem 0;
+}
+
+.cards__container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 250px;
+  height: 150px;
+  background: rgba(140, 140, 140, 0.1);
+  border: 1px solid rgba(167, 167, 167, 0.2);
+  border-radius: 14px;
+  padding: 0 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card__icon img {
+  width: 35px;
+}
+.card__symbol {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+  color: #ffffff;
+  text-shadow: 0px 0px 65.8195px #ffc255;
+}
+.card__name {
+  background: #fff8d6;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+.card__name h4 {
+  font-size: 9px;
+  line-height: 120%;
+  color: #000000;
+  text-shadow: 0px 0px 65.8195px #ffc255;
+  text-transform: uppercase;
+}
+.card__line {
+  color: #fff;
+  opacity: 0.15;
+}
+.card__price {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 120%;
+  color: #ffffff;
+  text-shadow: 0px 0px 66px #ffc255;
+}
+.card__percent {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  text-shadow: 0px 0px 66px #ffc255;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.card__percent.up {
+  color: #b1ffc2;
+}
+.card__percent.down {
+  color: #ffa3a6;
+}
+.card__percent i.fas {
+  font-size: 8px;
+}
+.cards__container .error__message {
+  color: #d51820;
+  font-size: 20px;
+  font-style: italic;
+}
+/* ---------------------- Cards Section End ------------------------- */
+
+/* ---------------------- Grid Blurbs Section Start ------------------------- */
+.grid__blurbs {
+  background-color: #642eda00;
+  background-image: url("/images/Gold-Number.png");
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position: 145% -3%;
+  padding-bottom: 25px;
+}
+
+.grid__headercontainer {
+  text-align: center;
+  padding: 100px 20px;
+  padding-top: 22px;
+}
+
+.grid__heading {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.grid__line {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  color: #29a643;
+}
+
+.grid__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gridblurbs__container {
+  display: grid;
+  gap: 25px;
+  margin: 0 25px 0 15px;
+  grid-template-columns: 1fr;
+}
+
+.grid-blurb__container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  background: #0b0819;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 30px;
+  padding-right: 17px;
+}
+
+.grid-blurb__heading {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.grid-blurb__line {
+  color: #29a643;
+  margin-bottom: 20px;
+}
+
+.grid-blurb__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.grid-blurb__icon {
+  margin-top: -1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.grid-blurb__icon img {
+  max-width: 50px;
+}
+
+.grid-blurb__container:nth-child(1) .grid-blurb__icon {
+  width: 40px;
+  margin: 0 auto;
+  margin-top: -15px;
+}
+
+.grid-blurb__container:nth-child(1) .grid-blurb__icon img {
+  width: 100%;
+}
+
+/* ---------------------- Grid Blurbs Section End ------------------------- */
+
+/* ---------------------- Register Section Start ------------------------- */
+
+.register__header {
+  text-align: center;
+  padding: 45px 20px;
+  padding-bottom: 40px;
+}
+
+.register__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 111.9%;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.register__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0 35px;
+}
+
+.register__blurbscontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.registerblurbs__container {
+  text-align: center;
+  padding-top: 16px;
+  margin: 0 35px;
+  border-bottom: 2px solid #fff;
+}
+
+.register__blurbs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.register__blurbicon {
+  color: #fff;
+}
+
+.register__blurbicon i {
+  font-size: 30px;
+}
+
+.registerblurb__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.registerblurbs__container:last-child {
+  border: none;
+}
+
+.register__formcontainer {
+  padding: 82px 35px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.validation__text {
+  color: #959595;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.validation__text .fake {
+  color: #d51820;
+}
+
+.validation__text .legit {
+  color: #29a643;
+}
+
+.validation__text li {
+  position: relative;
+  list-style: none;
+  font-size: 11px;
+  line-height: 13px;
+  transition: 0.5s;
+}
+
+.validation__text li::before {
+  content: "\f192";
+  font-family: "Font Awesome 6 free";
+  width: 9px;
+  font-weight: 900;
+  aspect-ratio: 1;
+  display: inline-flex;
+  margin-right: 12px;
+}
+
+.register-form-field__input {
+  background: #f7f7f7;
+  border: 1px solid #a9a9a9;
+  height: 40px;
+  outline: none;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px;
+}
+
+.register-form-success__field {
+  background: #f3fef4;
+  border: 1px solid #31b63b;
+  padding: 32px;
+}
+
+.success__header {
+  padding-top: 15px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.success__header i {
+  color: #29a643;
+  font-size: 52px;
+}
+
+.success__header h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3c763d;
+}
+
+.success__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 30px 0;
+}
+
+.success__content i {
+  color: #29a643;
+  font-size: 19px;
+}
+
+.success__content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3c763d;
+}
+
+.register-form-button__submit {
+  background: #29a643;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.register-form-button__submit.disabled {
+  background: #cccccc;
+}
+
+.register-form-button__submit:hover,
+.register-form-button__submit:active {
+  opacity: 0.8;
+}
+
+.register-form-button__submit:focus {
+  outline: 1px solid #fff;
+}
+
+.register-form__desc {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.register-form__desc a {
+  color: #d51820;
+}
+/* ---------------------- Register Blurbs Section End ------------------------- */
+
+/* ---------------------- Event Gallery Section Start ------------------------- */
+
+.event-gallery__section {
+  background-color: #f4f4f4;
+  padding: 48px 20px;
+}
+.gallery__header {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 39px;
+  text-align: center;
+  color: #252525;
+}
+
+/* ---------------------- Event Gallery Section End ------------------------- */
+
+/* ---------------------- BFH Section Start ------------------------- */
+
+.bfh-grid__blurb-container {
+  padding: 48px 0px;
+  display: grid;
+  gap: 12px;
+  grid-template-areas:
+    "bfh-one"
+    "bfh-two"
+    "bfh-three"
+    "bfh-four"
+    "bfh-five";
+}
+.bfh-grid__blurb:nth-child(1) {
+  grid-area: bfh-one;
+}
+.bfh-grid__blurb:nth-child(2) {
+  grid-area: bfh-two;
+}
+.bfh-grid__blurb:nth-child(3) {
+  grid-area: bfh-three;
+}
+.bfh-grid__blurb:nth-child(4) {
+  grid-area: bfh-four;
+}
+.bfh-grid__blurb:nth-child(5) {
+  grid-area: bfh-five;
+}
+.bfh__line {
+  color: #d51820;
+  margin: 0 auto;
+  width: 40px;
+  border: 2px solid;
+  margin-bottom: 22px;
+}
+.bfh-grid-blurb__heading {
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #444444;
+  margin-bottom: 23px;
+}
+.bfh-grid-blurb__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #444444;
+  margin-bottom: 50px;
+}
+
+.bfh-grid-blurb__icon {
+  width: 48px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.bfh-grid-blurb__icon img {
+  width: 100%;
+}
+
+.bfh-grid-blurb__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+.bfh-grid__blurb:nth-child(n + 2) {
+  padding: 0 35px;
+}
+
+/* ---------------------- BFH Section End ------------------------- */
+
+/* ---------------------- Primary Footer Section Start ------------------------- */
+
+.sm-hidden {
+  display: none;
+}
+
+/* ---------------------- Primary Footer Section End ------------------------- */
+
+/* ---------------------- Footer Section Start ------------------------- */
+
+footer {
+  background-color: #000;
+  padding: 3em 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.footer__links a {
+  color: #888;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-decoration: none;
+}
+footer .tp-logo {
+  width: 75%;
+  margin: 0 auto;
+  max-width: 182px;
+}
+
+.tp-logo img {
+  width: 100%;
+}
+
+.footer__links {
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+  color: #888;
+}
+
+/* ---------------------- Footer Section End ------------------------- */
+
+/* -----------------------------------------------------       Tablet View Styles Start     ------------------------------------ */
+
+/* ---------------------- Hero Tablet view Section Start ------------------------- */
+
+@media (min-width: 767px) {
+  .dark__section:nth-of-type(1) {
+    background-image: url(images/tablet_bg_icons/Body_BG.png);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: 125% 250%;
+  }
+  .hero__section {
+    background-image: url(images/tablet_bg_icons/hero1.png),
+      url(images/tablet_bg_icons/hero2.png),
+      url(images/tablet_bg_icons/hero3.png),
+      url(images/tablet_bg_icons/hero4.png),
+      url(images/tablet_bg_icons/hero5.png),
+      url(images/tablet_bg_icons/hero6.png) !important;
+    background-size: 20%, 10%, 20%, 25%, 10%, 19%;
+    background-position: top left 7.5%, top right 7.5%, center left -10%,
+      center right -10%, bottom left 12.5%, bottom -6% right 4%;
+    background-repeat: no-repeat;
+  }
+  .hero-section__overlay {
+    background-image: linear-gradient(
+      180deg,
+      rgba(32, 46, 71, 0.65) 36.53%,
+      rgba(32, 46, 71, 0.6175) 57.69%,
+      rgba(32, 46, 71, 0.585) 78.84%,
+      rgba(32, 46, 71, 0) 100%
+    ) !important;
+    padding-bottom: 5rem;
+  }
+  .hero__heading {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+  .hero__desc {
+    max-width: 404px;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+  .hero__cta {
+    max-width: 345px;
+  }
+
+  /* ---------------------- Hero Section End ------------------------- */
+
+  /* ---------------------- Cards Section Start ------------------------- */
+  #crypto__cards {
+    background-image: none !important;
+    padding-top: 25px;
+  }
+  .cards__container {
+    gap: 1rem;
+    padding: 0;
+  }
+  .card {
+    width: 210px;
+  }
+  /* ---------------------- Cards Section End ------------------------- */
+
+  /* ---------------------- Grid Blurbs Section Start ------------------------- */
+  .grid__blurbs {
+    background-image: url(/images/tablet_bg_icons/Black-Zero.png);
+    background-position: -70% 0%;
+    background-size: 60%;
+  }
+
+  .grid__heading br {
+    display: none;
+  }
+  .grid__line {
+    max-width: 70px;
+  }
+
+  .grid-blurb__container {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+  .grid-blurb__icon {
+    align-items: center;
+  }
+  .grid-blurb__icon img {
+    max-width: 90px;
+  }
+  /* ---------------------- Grid Blurbs Section End ------------------------- */
+
+  /* ---------------------- Register Blurbs Section Start ------------------------- */
+
+  .register__blurbscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 76px;
+  }
+  .registerblurbs__container {
+    border-top: 2px solid #fff;
+    margin: 0;
+  }
+  .registerblurbs__container:last-child {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  .registerblurbs__container:nth-child(2) {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+
+  .register__formcontainer {
+    padding: 82px 156px;
+  }
+  .register-form-button__submit {
+    padding: 8px;
+  }
+  /* ---------------------- Register Blurbs Section End ------------------------- */
+
+  /* ---------------------- Event Gallery Section Start ------------------------- */
+  .event-gallery__section {
+    padding: 75px 20px;
+  }
+
+  .gallery__header {
+    font-size: 30px;
+  }
+
+  /* ---------------------- Event Gallery Section End ------------------------- */
+
+  /* ---------------------- BFH Section Start ------------------------- */
+  .bfh-grid__blurb-container {
+    grid-template-areas:
+      "bfh-one bfh-one"
+      "bfh-two bfh-three"
+      "bfh-four bfh-five";
+  }
+  .bfh-grid-blurb__icon {
+    margin-left: 0;
+  }
+  .bfh-grid-blurb__title {
+    text-align: left;
+  }
+
+  .bfh-grid__blurb:not(:first-child) .bfh-grid-blurb__text {
+    text-align: left;
+  }
+  /* ---------------------- BFH Section End ------------------------- */
+
+  /* ---------------------- Footer Section Start ------------------------- */
+  footer {
+    flex-direction: row;
+    padding: 3em 30px;
+  }
+  footer .tp-logo {
+    margin-right: 0;
+  }
+
+  /* ---------------------- Footer Section End ------------------------- */
+}
+/* -----------------------------------------------------  Tablet View Styles End  ------------------------------------ */
+
+/* -----------------------------------------------------  Desktop View Styles Start  ------------------------------------ */
+
+/* ---------------------- Header  Section Start  ------------------------- */
+@media (min-width: 1200px) {
+  .sm-hidden {
+    display: block;
+  }
+  .nav__links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav__link a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  header nav {
+    justify-content: space-between;
+  }
+
+  /* ---------------------- Header Section End ------------------------- */
+
+  /* ---------------------- Hero Section Start  ------------------------- */
+  .hero__section {
+    background-position: top left 7.5%, top 10% right 12.5%, center left -9%,
+      center right -15%, bottom left 15%, bottom -12.5% right 12.5%;
+    background-size: 20%, 5%, 20%, 25%, 10%, 19%;
+  }
+
+  .hero__heading {
+    font-size: 35px;
+    line-height: 42px;
+    max-width: 625px;
+    padding-bottom: 0;
+  }
+  .hero__desc {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 35px;
+    max-width: 470px;
+  }
+  .demo__desc {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  /* ---------------------- Hero Section End ------------------------- */
+
+  /* ---------------------- Cards Section Start ------------------------- */
+  #crypto__cards {
+    padding: 50px 0;
+  }
+  /* ---------------------- Cards Section End ------------------------- */
+
+  /* ---------------------- Grid Blurbs Section Start ------------------------- */
+
+  .grid__headercontainer {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .grid__heading {
+    font-size: 35px;
+  }
+  .grid__desc {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .gridblurbs__container {
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-blurb__container {
+    max-width: 676px;
+  }
+  .grid-blurb__container:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .grid-blurb__container:nth-child(2) {
+    grid-column: 2 / span 2;
+  }
+  .grid-blurb__container:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .grid-blurb__container:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .grid-blurb__container:nth-child(1) .grid-blurb__header {
+    order: 1;
+    grid-column: 1;
+  }
+  .grid-blurb__container:nth-child(1) .grid-blurb__content {
+    order: 2;
+    grid-column: 1;
+  }
+  .grid-blurb__container:nth-child(1) .grid-blurb__empty {
+    order: 3;
+    grid-column: 2;
+  }
+  .grid-blurb__container:nth-child(1) .grid-blurb__icon {
+    order: 4;
+  }
+  .grid-blurb__container:nth-child(1) .grid-blurb__icon {
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .grid-blurb__container:nth-child(3) .grid-blurb__icon,
+  .grid-blurb__container:nth-child(4) .grid-blurb__icon {
+    max-width: 54px;
+  }
+  .grid-blurb__container:nth-child(3) .grid-blurb__icon img,
+  .grid-blurb__container:nth-child(4) .grid-blurb__icon img {
+    width: 100%;
+  }
+  /* ---------------------- Grid Blurbs Section End ------------------------- */
+
+  /* ---------------------- Register Blurbs Section Start ------------------------- */
+  .register__heading {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  .register__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .register-form-success__field{
+    grid-column: 1 / span 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .success__header{
+    flex-direction: row;
+    text-align: left;
+  }
+  .register-form-button__submit {
+    grid-column: 1 / span 2;
+    min-width: 345px;
+    margin: 0 auto;
+  }
+
+  /* ---------------------- Register Blurbs Section End ------------------------- */
+
+  /* ---------------------- Event Gallery Section Start ------------------------- */
+  /* ---------------------- Event Gallery Section End ------------------------- */
+
+  /* ---------------------- BFH Section Start ------------------------- */
+  .bfh-grid__blurb-container {
+    padding: 58px;
+    grid-template-areas:
+      "bfh-one bfh-two bfh-three"
+      "bfh-one bfh-four bfh-five";
+  }
+  .bfh-grid__blurb:nth-child(1) .bfh__line {
+    width: 72px;
+    margin-left: 0;
+  }
+
+  .bfh-grid__blurb:nth-child(1) .bfh-grid-blurb__heading {
+    font-size: 80px;
+    line-height: 90px;
+    word-wrap: break-word;
+    text-align: left;
+    max-width: 283px;
+  }
+  .bfh-grid__blurb:first-child .bfh-grid-blurb__text {
+    text-align: left;
+    max-width: 200px;
+  }
+
+  /* ---------------------- BFH Section End ------------------------- */
+
+  /* ---------------------- Secondary Footer Section Start ------------------------- */
+
+  section.secondary__footer.sm-hidden {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #000;
+    padding: 30px;
+    gap: 33px;
+    padding-bottom: 10px;
+  }
+
+  .footer-logo__container {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+
+  .footer-social-icons__container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #888;
+    justify-self: end;
+  }
+
+  .footer-social-icons__container h4 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .footer-social-icons__container svg {
+    height: 20px;
+    fill: #888;
+  }
+
+  .footer-social-icons__container a:hover svg {
+    fill: #d51820;
+  }
+
+  .secondary__footer .card__line {
+    grid-column: 1 / span 2;
+  }
+  /* ---------------------- Secondary Footer Section End ------------------------- */
+
+  /* ---------------------- Footer Section Start ------------------------- */
+  footer {
+    padding-top: 0;
+  }
+  /* ---------------------- Footer Section End ------------------------- */
+}
+/* -----------------------------------------------------  Desktop View Styles End  ------------------------------------ */
