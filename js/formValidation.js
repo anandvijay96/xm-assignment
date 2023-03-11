@@ -73,7 +73,6 @@ function validateForm() {
     .classList.contains("legit");
   const passwordValid =
     document.querySelectorAll(".validation__text li.legit").length === 6;
-  console.log(passwordValid, emailValid);
 
   emailValid && passwordValid
     ? submitButton.classList.remove("disabled")
